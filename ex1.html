@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Site</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+
+		/* desktop view */
+		.section {
+			width: 33.33%;
+			float: left;
+			border: 1px solid black;
+			box-sizing: border-box;
+			padding: 20px;
+			background-color: #F8F8F8;
+			margin-bottom: 30px;
+			position: relative;
+		}
+
+		.title {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: #E4007F;
+			color: white;
+			padding: 5px 10px;
+			font-size: 125%;
+			border: 1px solid black;
+		}
+
+		h1 {
+			font-size: 3em;
+			text-align: center;
+			margin: 20px 0;
+		}
+
+		/* tablet view */
+		@media (max-width: 991px) and (min-width: 768px) {
+			.section {
+				width: 50%;
+			}
+
+			.section:nth-child(3) {
+				clear: both;
+			}
+		}
+
+		/* mobile view */
+		@media (max-width: 767px) {
+			.section {
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>My Site</h1>
+	<div class="section">
+		<div class="title">Chicken</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lectus vel urna pulvinar ultricies. Praesent lobortis ligula at ex maximus, vel tempus eros pretium.</p>
+	</div>
+	<div class="section">
+		<div class="title">Beef</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lectus vel urna pulvinar ultricies. Praesent lobortis ligula at ex maximus, vel tempus eros pretium.</p>
+	</div>
+	<div class="section">
+		<div class="title">Sushi</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel lectus vel urna pulvinar ultricies. Praesent lobortis ligula at ex maximus, vel tempus eros pretium.</p>
+	</div>
+</body>
+</html>
